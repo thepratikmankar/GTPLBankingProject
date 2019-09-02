@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.gtplbank.pageObjects.HomePage;
 
-public class TC_HomePageVerification_002 extends TestBaseClass
+public class TC_HomePageVerification_002 extends TestBaseClass // This test case is for the Home Page verification of the Application.
 {
 	HomePage homePage;
 	@Test

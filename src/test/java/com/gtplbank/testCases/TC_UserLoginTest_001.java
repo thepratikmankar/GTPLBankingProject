@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.gtplbank.pageObjects.LoginPage;
 
-public class TC_UserLoginTest_001 extends TestBaseClass
+public class TC_UserLoginTest_001 extends TestBaseClass //this test case is for the user login to the Application
 {
 	@Test
 	public void loginTest() throws IOException

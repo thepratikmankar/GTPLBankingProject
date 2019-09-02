@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.gtplbank.pageObjects.AddNewCustomerPage;
 import com.gtplbank.pageObjects.HomePage;
 
-public class TC_AddNewCustomer_003 extends TestBaseClass
+public class TC_AddNewCustomer_003 extends TestBaseClass // This test case is for Adding a New Customer to the Application.
 {
 	HomePage home;
 	AddNewCustomerPage newCust;
