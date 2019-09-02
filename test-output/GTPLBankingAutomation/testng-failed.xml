@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [GTPLBankingAutomation]">
+  <listeners>
+    <listener class-name="com.gtplbank.utilities.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="GTPL Banking Chrome Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.gtplbank.testCases.TC_AddNewCustomer_003">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyAddNewCust"/>
+        </methods>
+      </class> <!-- com.gtplbank.testCases.TC_AddNewCustomer_003 -->
+    </classes>
+  </test> <!-- GTPL Banking Chrome Test(failed) -->
+</suite> <!-- Failed suite [GTPLBankingAutomation] -->
