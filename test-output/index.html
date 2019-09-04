@@ -128,22 +128,25 @@
                   <a name="verifyAddNewCust">
                   </a> <!-- verifyAddNewCust -->
                   <span class="method-name">verifyAddNewCust</span>
-                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User is not valid: 
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a href=&quot;addcustomerpage.php&quot;&gt; is not clickable at point (120,349) because another element &lt;a href=&quot;addcustomerpage.php&quot;&gt; obscures it
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-3K67UQ0M&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7884, moz:profile: C:\Users\prati\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e725a27c-4044-49d9-8bec-846702b58c29
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 18660, moz:profile: C:\Users\prati\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2020cf-c29d-4269-985f-671236f5034d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at com.gtplbank.testCases.TC_UserLoginTest_001.loginTest(TC_UserLoginTest_001.java:26)
-	at com.gtplbank.testCases.TC_AddNewCustomer_003.verifyAddNewCust(TC_AddNewCustomer_003.java:18)
-... Removed 25 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.gtplbank.pageObjects.HomePage.setAddNewCustomer(HomePage.java:47)
+	at com.gtplbank.testCases.TC_AddNewCustomer_003.verifyAddNewCust(TC_AddNewCustomer_003.java:24)
+... Removed 33 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -209,12 +212,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAddNewCust')
 data.setCell(0, 2, 'com.gtplbank.testCases.TC_AddNewCustomer_003')
-data.setCell(0, 3, 4393);
+data.setCell(0, 3, 5352);
 window.suiteTableData['GTPLBankingAutomation']= { tableData: data, tableDiv: 'times-div-GTPLBankingAutomation'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-GTPLBankingAutomation">
               </div> <!-- times-div-GTPLBankingAutomation -->
             </div> <!-- times-div -->
@@ -249,11 +252,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyAddNewCust</span>
-                <span class="method-start">18215 ms</span>
+                <span class="method-start">33629 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">22640 ms</span>
+                <span class="method-start">39010 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -9,25 +9,28 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">GTPLBankingAutomation</th></tr>
-<tr><td><a href="#t0">GTPL Banking Chrome Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">29,538</td><td></td><td></td></tr>
+<tr><td><a href="#t0">GTPL Banking Chrome Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">48,320</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GTPLBankingAutomation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GTPL Banking Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.gtplbank.testCases.TC_AddNewCustomer_003</td><td><a href="#m0">verifyAddNewCust</a></td><td rowspan="1">1567416829344</td><td rowspan="1">4393</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">GTPLBankingAutomation</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GTPL Banking Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.gtplbank.testCases.TC_AddNewCustomer_003</td><td><a href="#m0">verifyAddNewCust</a></td><td rowspan="1">1567439093981</td><td rowspan="1">5352</td></tr></tbody>
 </table>
-<h2>GTPL Banking Chrome Test</h2><h3 id="m0">com.gtplbank.testCases.TC_AddNewCustomer_003#verifyAddNewCust</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: User is not valid: 
+<h2>GTPL Banking Chrome Test</h2><h3 id="m0">com.gtplbank.testCases.TC_AddNewCustomer_003#verifyAddNewCust</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;a href=&quot;addcustomerpage.php&quot;&gt; is not clickable at point (120,349) because another element &lt;a href=&quot;addcustomerpage.php&quot;&gt; obscures it
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-3K67UQ0M&apos;, ip: &apos;192.168.0.103&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_201&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 7884, moz:profile: C:\Users\prati\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: e725a27c-4044-49d9-8bec-846702b58c29
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190813150448, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 18660, moz:profile: C:\Users\prati\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1c2020cf-c29d-4269-985f-671236f5034d
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at com.gtplbank.testCases.TC_UserLoginTest_001.loginTest(TC_UserLoginTest_001.java:26)
-	at com.gtplbank.testCases.TC_AddNewCustomer_003.verifyAddNewCust(TC_AddNewCustomer_003.java:18)
-... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy11.click(Unknown Source)
+	at com.gtplbank.pageObjects.HomePage.setAddNewCustomer(HomePage.java:47)
+	at com.gtplbank.testCases.TC_AddNewCustomer_003.verifyAddNewCust(TC_AddNewCustomer_003.java:24)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
