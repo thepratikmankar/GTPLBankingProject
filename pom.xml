@@ -71,7 +71,7 @@
 		<dependency> <!-- This dependency to support data driven testing using the xls, csv etc files -->
    			<groupId>org.apache.poi</groupId>
     		<artifactId>poi</artifactId>
-    		<version>3.7</version>
+    		<version>3.17</version>
 		</dependency>
 		
 		<dependency>
